@@ -1,0 +1,27 @@
+<ion-content>
+  <div class="wrapper">
+    <ion-card class="form-wrapper">
+      <ion-card-content>
+        <ion-img src="/assets/image/logo.png"></ion-img>
+        <ion-item lines="none">
+          <ion-icon name="person-outline"></ion-icon>
+          <ion-input required placeholder="Username" type="text" [(ngModel)]="username" required="required">
+          </ion-input>
+        </ion-item>
+        <ion-item lines="none">
+          <ion-icon name="key-outline"></ion-icon>
+          <ion-input required placeholder="Password" type="password" [(ngModel)]="password" required="required">
+          </ion-input>
+        </ion-item>
+        <ion-button type="button" (click)="AddDataUser()" expand="block">
+          <B>REGISTER</B>
+        </ion-button>
+        <div class="bpakun">
+          Sudah punya akun?
+          <a type="submit" (click)="prosesLogin()">Login</a>
+        </div>
+      </ion-card-content>
+
+    </ion-card>
+  </div>
+</ion-content>

@@ -1,0 +1,81 @@
+ion-content {
+  --background: #ffffff;
+  box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+  text-decoration: none;
+
+  .screen {
+    text-align: center;
+    position: inline-block;
+    top: auto;
+    right: 50%;
+    left: 50%;
+
+    .header {
+      --padding-top: 20px;
+      --background: #ffffff;
+
+      ion-icon {
+        color: black;
+      }
+
+      ion-img {
+        height: 70px;
+      }
+    }
+
+    .hallo {
+      ion-item {
+        padding: 15px 15px;
+        margin-bottom: 10px;
+        --min-height: 120px;
+        --background: linear-gradient(
+            0deg,
+            rgba(255, 255, 255, 0.1),
+            rgba(255, 255, 255, 0.1)
+          ),
+          url("/assets/image/home-header.jpg") no-repeat center center / cover;
+        --border-radius: 15px;
+        font-weight: 700;
+        font-size: 30px;
+        strong {
+          text-shadow: 2px 2px 5px #000000;
+        }
+
+        strong.user {
+          color: #f6b21b;
+        }
+
+        p {
+          padding-top: 5px;
+          font-size: 10pt;
+          color: black;
+        }
+      }
+    }
+
+    .menu {
+      ion-item {
+        margin: 15px 15px;
+        --min-height: 100px;
+        --background: linear-gradient(
+          96.16deg,
+          rgba(255, 232, 210, 0.5) 0.97%,
+          rgba(107, 58, 13, 0.5) 98.97%
+        );
+        box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.25);
+        backdrop-filter: blur(5px);
+        /* Note: backdrop-filter has minimal browser support */
+
+        border-radius: 15px;
+
+        h1 {
+          color: #4e2f00;
+        }
+
+        p {
+          color: #ffffff;
+        }
+      }
+    }
+  }
+}

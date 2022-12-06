@@ -1,0 +1,30 @@
+<ion-content [fullscreen]="true">
+  <div class="screen">
+    <div class="header">
+      <ion-item class="header" lines="none">
+        <ion-img slot="start" src="/assets/image/logo.png"></ion-img>
+        <ion-icon (click)="logout()" slot="end" ios="exit-outline"></ion-icon>
+      </ion-item>
+    </div>
+    <div class="hallo">
+      <ion-item>
+        <ion-label>
+          <strong class="hallo">Hallo,&nbsp;</strong>
+          <strong class="user">{{ nama }}!</strong>
+          <p>{{today | date}}</p>
+        </ion-label>
+      </ion-item>
+    </div>
+    <div class="menu">
+      <ion-item lines="none" (click)="pindahtask()">
+        <ion-thumbnail slot="start">
+          <img src="/assets/image/task.png" />
+        </ion-thumbnail>
+        <ion-label>
+          <h1>Task</h1>
+          <p>Aturlah kegiatanmu!</p>
+        </ion-label>
+      </ion-item>
+    </div>
+  </div>
+</ion-content>

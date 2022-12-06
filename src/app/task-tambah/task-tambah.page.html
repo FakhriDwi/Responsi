@@ -1,0 +1,38 @@
+<ion-content [fullscreen]="true">
+  <div class="screen">
+    <div class="header">
+      <ion-item class="header" lines="none">
+        <ion-buttons slot="start">
+          <ion-back-button defaultHref="task"></ion-back-button>
+        </ion-buttons>
+        <ion-label>
+          <strong>Tambah Task</strong>
+        </ion-label>
+      </ion-item>
+
+    </div>
+    <div class="list">
+      <ion-item lines="none">
+        <ion-label position="stacked">Tanggal</ion-label>
+        <ion-input required [(ngModel)]="tanggal" placeholder="Tanggal" type="date">
+        </ion-input>
+      </ion-item>
+      <ion-item lines="none">
+        <ion-label position="stacked">Judul</ion-label>
+        <ion-input required [(ngModel)]="judul" placeholder="Judul" type="text">
+        </ion-input>
+      </ion-item>
+      <ion-item lines="none">
+        <ion-label position="stacked">Isi</ion-label>
+        <ion-textarea rows="26" required [(ngModel)]="isi" placeholder="Isi" type="text">
+        </ion-textarea>
+      </ion-item>
+    </div>
+  </div>
+  <div class="tambah">
+    <ion-button type="button" (click)="AddDataTask()" expand="block">
+      ADD TASK
+    </ion-button>
+  </div>
+
+</ion-content>
